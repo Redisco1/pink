@@ -11,7 +11,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms</title>
@@ -23,7 +23,7 @@
       <div class="site-header__logo logo">
         <a class="logo__link" href="index.html">
           <svg class="logo__icon logo__icon--mobile" width="74" height="23">
-            <use  href="img/sprite.svg#pink-logo"></use>
+            <use href="img/sprite.svg#pink-logo"></use>
           </svg>
           <svg class="logo__icon logo__icon--tablet" width="145" height="40">
             <use href="img/sprite.svg#pink-logo-tablet"></use>
@@ -35,7 +35,7 @@
         </a>
       </div>
       <div class="site-header__menu menu  menu--opened">
-        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--first-child">
           </li>
@@ -73,54 +73,62 @@
         <fieldset class="form__fieldset form__fieldset--personal-date">
           <legend class="form__legend visually-hidden">Личные данные пользователей</legend>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">ФАМИЛИЯ:</span>
-            <input class="form__input form__input--perosal-data input input--required input--family" placeholder="Укажите фамилию *" name="family" type="text">
+            <input class="form__input form__input--perosal-data input input--required input--family"
+              placeholder="Укажите фамилию *" name="family" type="text">
           </label>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Имя:</span>
-            <input class="form__input form__input--perosal-data input input--required input--name" placeholder="Введите ваше имя *" name="name" type="text">
+            <input class="form__input form__input--perosal-data input input--required input--name"
+              placeholder="Введите ваше имя *" name="name" type="text">
           </label>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Отчество:</span>
-            <input class="form__input form__input--perosal-data input input--family" placeholder="Ну и отчество тоже" name="patronymic" type="text">
+            <input class="form__input form__input--perosal-data input input--family" placeholder="Ну и отчество тоже"
+              name="patronymic" type="text">
           </label>
         </fieldset>
         <!-- <div class="form__fildset-wrapper"> Для фона на всю ширину страницы -->
         <div class="form__fildset-wrapper form__fildset-wrapper--progress">
           <fieldset class="form__fieldset form__fieldset--progress">
             <legend class="form__legend">Ваши безбашенные <br class="form__legend-br">
-            достижения в путешествии</legend>
+              достижения в путешествии</legend>
             <label class="form__lable form__lable--nth-child1 form__lable--checked">
-              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="selfie_with_a_shark" value="yes"
-              type="checkbox"><span class="form__checkbox-style"></span>Сделал селфи с акулой
+              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="selfie_with_a_shark"
+                value="yes" type="checkbox"><span class="form__checkbox-style"></span>Сделал селфи с акулой
             </label>
             <label class="form__lable  form__lable--nth-child4 form__lable--checked">
-              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="burned" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Обгорел
-            на пляже
+              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="burned" value="yes"
+                type="checkbox"><span class="form__checkbox-style"></span>Обгорел
+              на пляже
             </label>
             <label class="form__lable  form__lable--nth-child2 form__lable--checked">
-              <input class="form__input-checkbox input--checkbox visually-hidden" name="chuck_norris" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Видел
-            Чака Норриса
+              <input class="form__input-checkbox input--checkbox visually-hidden" name="chuck_norris" value="yes"
+                type="checkbox"><span class="form__checkbox-style"></span>Видел
+              Чака Норриса
             </label>
             <label class="form__lable  form__lable--nth-child5 form__lable--checked">
-              <input class="form__input-checkbox input--checkbox visually-hidden" name="souvenirs" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Накупил
-            сувениров
+              <input class="form__input-checkbox input--checkbox visually-hidden" name="souvenirs" value="yes"
+                type="checkbox"><span class="form__checkbox-style"></span>Накупил
+              сувениров
             </label>
             <label class="form__lable form__lable--nth-child3 form__lable--checked">
               <input class="form__input-checkbox input--checkbox visually-hidden" checked name="held_tower" value="yes"
-              type="checkbox"><span class="form__checkbox-style"></span>Удержал башню
+                type="checkbox"><span class="form__checkbox-style"></span>Удержал башню
             </label>
             <label class="form__lable form__lable--nth-child6 form__lable--checked">
               <input class="form__input-checkbox input--checkbox  visually-hidden" name="trashed_hotel" value="yes"
-              type="checkbox"><span class="form__checkbox-style"></span>Разгромил отель
+                type="checkbox"><span class="form__checkbox-style"></span>Разгромил отель
             </label>
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts-info">
           <legend class="form__legend form__legend--hidden">Контактная информация</legend>
-          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign form__lable-sign--contacts-info">Номер телефона</span>
+          <label class="form__lable form__lable--contacts-info"><span
+              class="form__lable-sign form__lable-sign--contacts-info">Номер телефона</span>
             <div class="form__wrapper input--number-icon">
               <input class="form__input input--number input" placeholder="Номер, пожалуйста" name="phone" type="tel">
             </div>
           </label>
-          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign form__lable-sign--contacts-info">Адрес почты</span>
+          <label class="form__lable form__lable--contacts-info"><span
+              class="form__lable-sign form__lable-sign--contacts-info">Адрес почты</span>
             <div class="form__wrapper input--mail-icon">
               <input class="form__input input input--mail input--required" placeholder="Введите почту *" name="mail"
                 type="email">
@@ -131,28 +139,33 @@
         <div class="form__fildset-wrapper form__fildset-wrapper--apps">
           <fieldset class="form__fieldset form__fieldset--apps">
             <legend class="form__legend form__legend--apps">С каким приложением
-            путешествовали?</legend>
+              путешествовали?</legend>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio input--radio visually-hidden" checked name="os" value="ios" type="radio"><span class="form__radio-style"></span>Pink
-            для iOS
+              <input class="form__input-radio input--radio visually-hidden" checked name="os" value="ios"
+                type="radio"><span class="form__radio-style"></span>Pink
+              для iOS
             </label>
             <label class="form__lable form__lable--radio">
-            <input class="form__input-radio input--radio visually-hidden" name="os" value="android" type="radio"><span class="form__radio-style"></span>Pink на
-            Android
+              <input class="form__input-radio input--radio visually-hidden" name="os" value="android" type="radio"><span
+                class="form__radio-style"></span>Pink на
+              Android
             </label>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio form__input-radio--last-child input--radio visually-hidden" name="os" value="windows" type="radio"><span class="form__radio-style"></span>Windows
-            Phone
+              <input class="form__input-radio form__input-radio--last-child input--radio visually-hidden" name="os"
+                value="windows" type="radio"><span class="form__radio-style"></span>Windows
+              Phone
             </label>
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--emotion">
           <legend class="form__legend form__legend--emotion">Опишите свои эмоции</legend>
-          <textarea class="form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="form__textarea" name="emotions"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <div class="form__button-container">
           <button class="form__button button button--form" type="submit">Отправить форму</button>
-          <b class="form__sign"><span class="form__sign-star">*</span> — обязательные  <span class="form__sign-desktop">для заполнения</span> поля</b>
+          <b class="form__sign"><span class="form__sign-star">*</span> — обязательные <span
+              class="form__sign-desktop">для заполнения</span> поля</b>
         </div>
       </form>
     </div>
