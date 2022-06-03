@@ -1,0 +1,77 @@
+.site-header {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+
+  &--no-js {
+    display: block;
+    position: static;
+    background-color: #1e3346;
+    min-height: 325px;
+  }
+}
+
+.site-header__navigation {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.site-header__logo {
+  position: relative;
+  z-index: 2;
+}
+
+// Стили для планшета
+@media (min-width: @tablet-width) {
+  .site-header {
+    &--no-js {
+      min-height: 365px;
+    }
+  }
+
+  .site-header__navigation {
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+// Стили для ПК
+@media (min-width: @desktop_width) {
+  .site-header {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+    &--no-js {
+      min-height: 110px;
+    }
+  }
+
+  .site-header__navigation {
+    max-width: 940px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .site-header__menu {
+    margin-left: auto;
+  }
+}

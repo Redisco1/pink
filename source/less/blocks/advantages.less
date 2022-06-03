@@ -1,0 +1,355 @@
+// Секция преимуществ
+.advantages {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.advantages__title {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.title-second__separator {
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 120%;
+  padding: 0;
+}
+
+.advantages__list {
+  position: relative;
+  background-color: #f2f2f2;
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  padding-top: 82px;
+
+  &::before {
+    content: "";
+    background: linear-gradient(to bottom right, #ffffff 50%, rgba(177, 17, 17, 0) 52%);
+    width: calc(100% + 20px);
+    height: 32px;
+    position: absolute;
+    transform-origin: right;
+    top: 0;
+    left: -20px;
+  }
+}
+
+.advantages__item {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__title-item {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__br-title-item {
+  display: none;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.advantages__discription-item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__image {
+  height: 277px;
+  width: 157px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 24px 24px 0 0;
+
+  &--hidden-tablet {
+    margin-top: 40px;
+    display: block;
+  }
+
+  &--visually-descktop {
+    display: none;
+  }
+}
+
+// Cтили Преимуществ для планшета
+@media (min-width: @tablet-width) {
+  .advantages {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+  }
+
+  .advantages__title {
+    min-width: 588px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .title-second__separator {
+    margin-bottom: 4px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    margin: 0;
+    margin-bottom: 54px;
+    display: grid;
+    grid-template-columns: 268px 310px;
+    grid-row: auto auto auto;
+    justify-content: center;
+    position: relative;
+    column-gap: 42px;
+    background-color: #f2f2f2;
+    list-style: none;
+    padding: 0 20px;
+    padding-top: 78px;
+    padding-bottom: 9px;
+
+    &::before {
+      content: "";
+      background: linear-gradient(to bottom right, #ffffff 50%, rgba(177, 17, 17, 0) 52%);
+      width: calc(100% + 20px);
+      height: 56px;
+      position: absolute;
+      transform-origin: right;
+      top: 0;
+    }
+  }
+
+  .advantages__item {
+    max-width: 310px;
+    grid-column: 2/3;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--first {
+      position: absolute;
+      left: -310px;
+      top: -70px;
+      grid-row: 1/4;
+      order: -1;
+    }
+  }
+
+  .advantages__title-item {
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .advantages__br-title-item {
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .advantages__discription-item {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .advantages__image {
+    height: 481px;
+    width: 268px;
+    display: block;
+    border-radius: 40px 40px 0 0;
+
+    &--hidden-tablet {
+      height: 481px;
+      display: block;
+      margin: 0;
+    }
+
+    &--visually-descktop {
+      display: none;
+    }
+  }
+}
+
+// Стили преимуществ для ПК
+@media (min-width: @desktop_width) {
+  .advantages {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+  }
+
+  .advantages__title {
+    max-width: 820px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 20px;
+    z-index: 1;
+  }
+
+  .title-second__separator {
+    display: block;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    line-height: 68px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 68px;
+    row-gap: 40px;
+    position: relative;
+    background-color: #f2f2f2;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    padding-top: 56px;
+    padding-bottom: 68px;
+
+    &::before {
+      content: "";
+      background: linear-gradient(to bottom right, #ffffff 52%, rgba(177, 17, 17, 0) 50%);
+      width: calc(100% + 130px);
+      height: 110px;
+      position: absolute;
+      left: -130px;
+      top: -8px;
+    }
+  }
+
+  .advantages__item {
+    position: relative;
+    display: grid;
+    grid-column: auto;
+    align-items: center;
+    max-width: 252px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--first {
+      display: none;
+      grid-row: 0/0;
+      order: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 300px;
+      height: 9px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+      opacity: 0.3;
+      border-radius: 100% 100% 0 0;
+      top: 292px;
+      left: -24px;
+    }
+  }
+
+  .advantages__title-item {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__br-title-item {
+    display: block;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .advantages__discription-item {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #283645;
+
+    &--first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .advantages__image {
+    height: 301px;
+    width: 186px;
+    border-radius: 28px 28px 0 0;
+    object-fit: contain;
+
+    &--hidden-tablet {
+      display: none;
+    }
+
+    &--visually-descktop {
+      display: block;
+      position: relative;
+      margin-bottom: 58px;
+    }
+  }
+
+  .advantages__effect {
+    margin: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,152 @@
+.intro__title {
+  display: block;
+  background-image: url("../img/index-img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0 12%;
+  padding-top: 92px;
+  padding-bottom: 312px;
+}
+
+@media (min-resolution: 2dppx) {
+  .intro__title {
+    background-image: url("../img/index-img/intro-bg@2x.jpg");
+    background-size: contain;
+  }
+}
+
+.intro__button {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.intro__list {
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+.intro__sign {
+  display: block;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+// Стили intro для планшета
+@media (min-width: @tablet-width) {
+  .intro {
+    display: grid;
+    grid-template-columns: 620px;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #1d2631;
+    background-image: url("../img/index-img/intro-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 3%;
+    padding-top: 203px;
+    padding-bottom: 113px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../img/index-img/intro-bg-tablet@2x.jpg");
+      background-size: contain;
+    }
+  }
+
+  .intro__title {
+    max-width: 200px;
+    display: inline-block;
+    background: none;
+    margin: 0;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .intro__button {
+    max-width: 300px;
+    margin: 0;
+    margin-bottom: 45px;
+  }
+
+  .intro__list {
+    margin: 0;
+    margin-bottom: 24px;
+    margin-left: 43px;
+  }
+
+  .intro__sign {
+    max-width: 300px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .intro {
+    display: grid;
+    grid-template-columns: 940px;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #1d2631;
+    background-image: url("../img/index-img/intro-bg-descktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0 40px;
+    padding-top: 210px;
+    padding-bottom: 126px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../img/index-img/intro-bg-descktop@2x.jpg");
+      background-size: contain;
+    }
+  }
+
+  .intro__title {
+    max-width: 300px;
+    display: inline-block;
+    background: none;
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  .intro__button {
+    margin: 0;
+    margin-bottom: 70px;
+  }
+
+  .intro__list {
+    margin: 0;
+    margin-left: 46px;
+    margin-bottom: 39px;
+  }
+
+  .intro__sign {
+    max-width: 300px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,306 @@
+.cards-list {
+  max-width: 100%;
+  padding: 0 20px;
+  list-style: none;
+  color: #283645;
+}
+
+.cards-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  background-color: #f2f2f2;
+  padding: 0;
+  padding-bottom: 8px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  &--panorama {
+    position: relative;
+
+    &::before {
+      content: "ПАНОРАМА ДНЯ";
+      position: absolute;
+      display: block;
+      width: 140px;
+      height: 36px;
+      top: 0;
+      right: 0;
+      padding: 6px 18px;
+      background-color: #d22856;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      z-index: 10;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.cards-list__link {
+  margin-bottom: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 0 0 20px 1px #283645;
+  }
+
+  &--panorama {
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+}
+
+.cards-list__image {
+  height: 180px;
+  align-self: center;
+  display: block;
+  width: 100%;
+  padding: 0;
+  object-fit: contain;
+
+  &--panorama {
+    position: relative;
+    width: calc(100% + 40px);
+    height: 137px;
+    left: -20px;
+    object-fit: cover;
+    overflow-x: hidden;
+    object-position: center;
+  }
+}
+
+.cards-list__title {
+  max-width: 300px;
+  min-width: 140px;
+  margin: 0;
+  padding: 0 17px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cards-list__comment-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.cards-list__comment {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+  padding-right: 10px;
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.cards-list__favorites {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 48px;
+  border: none;
+  background-color: transparent;
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-image: url("../img/catalog-img/svg/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 17px center;
+}
+
+.cards-list__value-favorites {
+  display: inline;
+  max-width: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+  /* stylelint-disable */
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  /* stylelint-enable */
+}
+
+//  Cтили карточек галереи фотографий на планшет
+@media (min-width: @tablet-width) {
+  .cards-list {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    list-style: none;
+  }
+
+  .cards-list__item {
+    max-width: 100%;
+    min-height: 455px;
+    background-color: #f2f2f2;
+    padding: 0;
+    padding-bottom: 13px;
+    margin: 0;
+    margin-bottom: 0;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      grid-column: 1/3;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
+
+      &::before {
+        top: 57px;
+      }
+    }
+  }
+
+  .cards-list__link {
+    margin-bottom: 23px;
+  }
+
+  .cards-list__image {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      max-width: none;
+      width: 660px;
+      height: 509px;
+      left: -20px;
+    }
+  }
+
+  .cards-list__title {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0 30px;
+  }
+
+  .cards-list__comment {
+    min-width: 100%;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    padding: 0 30px;
+
+    &--panorama {
+      margin-bottom: 6px;
+      order: 3;
+    }
+  }
+
+  .cards-list__br-comment {
+    display: none;
+  }
+
+  .cards-list__favorites {
+    min-width: 100%;
+    order: 2;
+    text-align: left;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 100px;
+    background-position: bottom 50% right 30px;
+
+    &--panorama {
+      min-width: 120px;
+      max-width: 180px;
+      margin-bottom: 0;
+      margin-right: 20px;
+      padding-top: 2px;
+      padding-left: 20px;
+      padding-right: 27px;
+      background-position: bottom 50% right 10px;
+    }
+  }
+
+  .cards-list__value-favorites {
+    &--panorama {
+      max-width: 30px;
+      padding-right: 0;
+    }
+  }
+}
+
+//  Cтили карточек галереи фотографий на PC
+@media (min-width: @desktop_width) {
+  .cards-list {
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 50px;
+  }
+
+  .cards-list__item {
+    min-height: 556px;
+
+    &--panorama {
+      grid-column: 1/4;
+      margin-bottom: 0;
+
+      &::before {
+        top: 54px;
+      }
+    }
+  }
+
+  .cards-list__link {
+    margin-bottom: 24px;
+  }
+
+  .cards-list__image {
+    height: 400px;
+    width: 300px;
+
+    &--panorama {
+      width: 1200px;
+      height: 506px;
+      left: -130px;
+    }
+  }
+
+  .cards-list__title {
+    padding-left: 28px;
+  }
+
+  .cards-list__comment {
+    padding-left: 28px;
+    margin-bottom: 4px;
+  }
+
+  .cards-list__favorites {
+    padding-left: 26px;
+
+    &--panorama {
+      position: relative;
+    }
+  }
+}
+// Cтили панорамы на ширине 1080 px
