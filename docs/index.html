@@ -11,7 +11,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -22,7 +22,7 @@
       <div class="site-header__logo logo">
         <a class="logo__link" href="#">
           <svg class="logo__icon logo__icon--mobile" width="74" height="23">
-            <use href="img/sprite.svg#pink-logo"></use>
+            <use  href="img/sprite.svg#pink-logo"></use>
           </svg>
           <svg class="logo__icon logo__icon--tablet" width="145" height="40">
             <use href="img/sprite.svg#pink-logo-tablet"></use>
@@ -34,7 +34,7 @@
         </a>
       </div>
       <div class="site-header__menu menu  menu--opened">
-        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--first-child">
           </li>
@@ -59,25 +59,21 @@
     <section class="site-index__intro intro">
       <h2 class="intro__title title-second">Взгляните на жизнь</br>
         иначе!</h2>
-      <a class="intro__button button" href="https://www.apple.com/ru/app-store/" target="_blank" type="button">Скачать
-        приложение</a>
+      <a class="intro__button button" href="https://www.apple.com/ru/app-store/" target="_blank" type="button">Скачать приложение</a>
       <ul class="intro__list list-os">
         <li class="list-os__item  list-os__item--apple">
           <a class="list-os__link" href="https://www.apple.com/ru/app-store/" target="_blank">
-            <img class="list-os__icon" src="img/index-img/svg/apple-ico.svg" alt="Скачать для apple." width="47"
-              height="56">
+            <img class="list-os__icon" src="img/index-img/svg/apple-ico.svg" alt="Скачать для apple." width="47" height="56">
           </a>
         </li>
         <li class="list-os__item list-os__item--android">
           <a class="list-os__link" href="https://play.google.com/store/apps?hl=ru&gl=US" target="_blank">
-            <img class="list-os__icon" src="img/index-img/svg/android-ico.svg" alt="Скачать для android." width="43"
-              height="47">
+            <img class="list-os__icon" src="img/index-img/svg/android-ico.svg" alt="Скачать для android." width="43" height="47">
           </a>
         </li>
         <li class="list-os__item list-os__item--windows">
           <a class="list-os__link" href="https://www.microsoft.com/ru-ru/store/apps/" target="_blank">
-            <img class="list-os__icon" src="img/index-img/svg/microsoft-ico.svg" alt="Скачать для windows." width="44"
-              height="42">
+            <img class="list-os__icon" src="img/index-img/svg/microsoft-ico.svg" alt="Скачать для windows." width="44" height="42">
           </a>
         </li>
       </ul>
@@ -90,58 +86,38 @@
       </h2>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img class="advantages__image advantages__image--visually-descktop"
-            src="./img/index-img/iphone-advantages-descktop.jpg"
-            srcset="./img/index-img/iphone-advantages-descktop@2x.jpg 2x" alt="Фотография мусорных баков." width="186px"
-            height="301px">
+          <img class="advantages__image advantages__image--visually-descktop" src="./img/index-img/iphone-advantages-descktop.jpg" srcset="./img/index-img/iphone-advantages-descktop@2x.jpg 2x" alt="Фотография мусорных баков." width="186px" height="301px">
           <h3 class="advantages__title-item">Поднимает настроение</h3>
-          <p class="advantages__discription-item advantages__discription-item--first-child">Приложение позволит вам
-            победить осеннюю хандру и депрессию буквально
+          <p class="advantages__discription-item advantages__discription-item--first-child">Приложение позволит вам победить осеннюю хандру и депрессию буквально
             в
             несколько кликов!</p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__image advantages__image--visually-descktop"
-            src="./img/index-img/iphone-advantages-descktop-second.jpg"
-            srcset="./img/index-img/iphone-advantages-descktop-second@2x.jpg 2x"
-            alt="Фотография мусорных баков с оброботкой." width="186px" height="301px">
+          <img class="advantages__image advantages__image--visually-descktop" src="./img/index-img/iphone-advantages-descktop-second.jpg" srcset="./img/index-img/iphone-advantages-descktop-second@2x.jpg 2x" alt="Фотография мусорных баков с оброботкой." width="186px" height="301px">
           <h3 class="advantages__title-item">Меняет мир вокруг</h3>
-          <p class="advantages__discription-item advantages__discription-item--first-child">Сделайте снимок и <br
-              class="advantages__br-title-item advantages__br-title-item--desktop"> украсьте его смайликом <br
-              class="advantages__br-title-item advantages__br-title-item--desktop"> или текстовой подписью, чтобы <br
-              class="advantages__br-title-item advantages__br-title-item--tablet">
+          <p class="advantages__discription-item advantages__discription-item--first-child">Сделайте снимок и <br class="advantages__br-title-item advantages__br-title-item--desktop"> украсьте его смайликом <br  class="advantages__br-title-item advantages__br-title-item--desktop"> или текстовой подписью, чтобы <br class="advantages__br-title-item advantages__br-title-item--tablet">
             усилить эффект</p>
         </li>
         <li class="advantages__item">
-          <img class="advantages__image advantages__image--visually-descktop"
-            src="./img/index-img/iphone-advantages-descktop-third.jpg"
-            srcset="./img/index-img/iphone-advantages-descktop-third@2x.jpg 2x"
-            alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)." width="186px" height="301px">
+          <img class="advantages__image advantages__image--visually-descktop" src="./img/index-img/iphone-advantages-descktop-third.jpg" srcset="./img/index-img/iphone-advantages-descktop-third@2x.jpg 2x" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)." width="186px" height="301px">
           <h3 class="advantages__title-item">Заводит <br class="advantages__br-title-item"> новых друзей</h3>
-          <p class="advantages__discription-item advantages__discription-item--first-child">Ставьте лайки,
-            комментируйте, делитесь фотографиями с друзьями <br
-              class="advantages__br-title-item advantages__br-title-item--desktop"> и
+          <p class="advantages__discription-item advantages__discription-item--first-child">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями <br class="advantages__br-title-item advantages__br-title-item--desktop"> и
             заводите новых</p>
         </li>
         <li class="advantages__item advantages__item--first">
           <picture>
-            <source media="(min-width: 660px) and (max-width: 1079px)"
-              srcset="img/index-img/iphone-advantages-tablet1x.jpg 1x, img/index-img/iphone-advantages-tablet2x.jpg 2x">
-            <img class="advantages__image advantages__image--hidden-tablet" src="img/index-img/iphone-advantages1x.jpg"
-              srcset="img/index-img/iphone-advantages2x.jpg 2x"
-              alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!).">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="img/index-img/iphone-advantages-tablet1x.jpg 1x, img/index-img/iphone-advantages-tablet2x.jpg 2x">
+            <img class="advantages__image advantages__image--hidden-tablet" src="img/index-img/iphone-advantages1x.jpg" srcset="img/index-img/iphone-advantages2x.jpg 2x" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!).">
           </picture>
         </li>
       </ul>
       <div class="advantages__effect effect">
         <div class="effect__text">
           <h3 class="effect__title">Эффект <br class="effect__br-title">
-            на 24 часа!</h3>
+          на 24 часа!</h3>
           <p class="effect__description">Британские ученые провели исследования
-            и доказали, <br class="effect__br-description"> что положительный эффект <br
-              class="effect__br-description effect__br-description--tablet">
-            от использования приложения длится <br class="effect__br-description effect__br-description--tablet"> целые
-            сутки!</p>
+            и доказали, <br class="effect__br-description"> что положительный эффект <br class="effect__br-description effect__br-description--tablet">
+            от использования приложения длится <br class="effect__br-description effect__br-description--tablet"> целые сутки!</p>
           <a class="effect__link" href="">Узнать больше об исследовании</a>
         </div>
       </div>
@@ -154,22 +130,22 @@
             <h3 class="reviews__title">Николай Петров</h3>
             <span class="reviews__sign">25 лет, водитель трамвая</span>
             <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
           <li class="reviews__item slider__item">
             <h3 class="reviews__title"> Николай Петров</h3>
             <span class="reviews__sign">25 лет, водитель трамвая</span>
             <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
           <li class="reviews__item slider__item">
             <h3 class="reviews__title"> Николай Петров</h3>
             <span class="reviews__sign">25 лет, водитель трамвая</span>
             <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я
-              познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
         <div class="reviews__toggles slider__toggles">
@@ -200,15 +176,14 @@
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="price__wrapper slider">
         <table class="price__table slider__table">
-          <tbody class="price__table slider__table">
+          <tbody  class="price__table slider__table">
             <tr class="price__column slider__column  slider__column--first">
               <td class="price__cell">Розовый фильтр</td>
               <td class="price__cell">Смайлики</td>
               <td class="price__cell">Комментарии</td>
             </tr>
             <tr class="price__column slider__column slider__column--active">
-              <th class="price__title price__title--first-child">База <span class="price__title-many">1,99 USD</span>
-              </th>
+              <th class="price__title price__title--first-child">База <span class="price__title-many">1,99 USD</span></th>
               <td class="price__cell price__cell--yes"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell price__cell--no"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell price__cell--no"> <span class="price__signature">Комментарии</span> </td>
@@ -220,23 +195,22 @@
               <td class="price__cell price__cell--no"> <span class="price__signature">Комментарии</span> </td>
             </tr>
             <tr class="price__column slider__column">
-              <th class="price__title price__title--last-child">АНЛИМ <span class="price__title-many">9,99 USD</span>
-              </th>
+              <th class="price__title price__title--last-child">АНЛИМ <span class="price__title-many">9,99 USD</span></th>
               <td class="price__cell price__cell--yes"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell price__cell--yes"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell price__cell--yes"> <span class="price__signature">Комментарии</span> </td>
             </tr>
           </tbody>
         </table>
-        <div class="price__toggles slider__toggles">
-          <button class="slider__toggle " type="button"><span class="visually-hidden">Выбрать 1
-              слайд.</span></button>
-          <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">Выбрать
-              2
-              слайд.</span></button>
-          <button class="slider__toggle" type="button"><span class="visually-hidden">Выбрать 3
-              слайд.</span></button>
-        </div>
+          <div class="price__toggles slider__toggles">
+            <button class="slider__toggle " type="button"><span class="visually-hidden">Выбрать 1
+                слайд.</span></button>
+            <button class="slider__toggle slider__toggle--current" type="button"><span class="visually-hidden">Выбрать
+                2
+                слайд.</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">Выбрать 3
+                слайд.</span></button>
+          </div>
       </div>
     </section>
     <section class="contacts">
@@ -258,9 +232,7 @@
         </li>
       </ul>
       <div class="contacts__maps">
-        <iframe class="contacts__maps-google"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.773999083946!2d30.322797852028483!3d59.93565330485993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963105869aed15%3A0x30a175b869a78bc0!2z0JDRgtGA0LjRg9C8!5e0!3m2!1sru!2sru!4v1652803886201!5m2!1sru!2sru"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="contacts__maps-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.773999083946!2d30.322797852028483!3d59.93565330485993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963105869aed15%3A0x30a175b869a78bc0!2z0JDRgtGA0LjRg9C8!5e0!3m2!1sru!2sru!4v1652803886201!5m2!1sru!2sru"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

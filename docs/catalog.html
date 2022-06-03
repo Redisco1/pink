@@ -11,7 +11,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./catalog.html">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog PINK</title>
@@ -23,7 +23,7 @@
       <div class="site-header__logo logo">
         <a class="logo__link" href="index.html">
           <svg class="logo__icon logo__icon--mobile" width="74" height="23">
-            <use href="img/sprite.svg#pink-logo"></use>
+            <use  href="img/sprite.svg#pink-logo"></use>
           </svg>
           <svg class="logo__icon logo__icon--tablet" width="145" height="40">
             <use href="img/sprite.svg#pink-logo-tablet"></use>
@@ -35,7 +35,7 @@
         </a>
       </div>
       <div class="site-header__menu menu  menu--opened">
-        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--first-child">
           </li>
@@ -60,25 +60,18 @@
     <section class="site-catalog__photo-gallery">
       <h2 class="site-catalog__title title-second">Фотографии <br>
         пользователей</h2>
-      <p class="site-catalog__sub-title">Взгляните на фотографии, которые выкладывают пользователи! <br
-          class="site-catalog__br-sub-title">
+      <p class="site-catalog__sub-title">Взгляните на фотографии, которые выкладывают пользователи! <br class="site-catalog__br-sub-title">
         Видите, как не хватает ваших?</p>
       <ul class="site-catalog__list cards-list">
         <li class="cards-list__item cards-list__item--panorama">
           <a class="cards-list__link cards-list__link--panorama" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)" type="image/webp"
-                srcset="./img/catalog-img/panorama-desktop.webp 1x, ./img/catalog-img/panorama-desktop@2x.webp 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp"
-                srcset="./img/catalog-img/panorama-tablet.webp 1x, ./img/catalog-img/panorama-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/catalog-img/panorama-mobile.webp 1x, ./img/catalog-img/panorama-mobile@2x.webp 2x">
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/panorama-tablet.jpg 1x, ./img/catalog-img/panorama-tablet@2x.jpg 2x">
-              <img class="cards-list__image cards-list__image--panorama" src="./img/catalog-img/panorama-mobile.jpg"
-                alt="" srcset="./img/catalog-img/panorama-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" type="image/webp" srcset="./img/catalog-img/panorama-desktop.webp 1x, ./img/catalog-img/panorama-desktop@2x.webp 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp" srcset="./img/catalog-img/panorama-tablet.webp 1x, ./img/catalog-img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog-img/panorama-mobile.webp 1x, ./img/catalog-img/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/panorama-tablet.jpg 1x, ./img/catalog-img/panorama-tablet@2x.jpg 2x">
+              <img class="cards-list__image cards-list__image--panorama" src="./img/catalog-img/panorama-mobile.jpg" alt="" srcset="./img/catalog-img/panorama-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Анна
@@ -89,25 +82,18 @@
             смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
           <button class="cards-list__favorites cards-list__favorites--panorama" disabled type="button">Нравится:
-            <input class="cards-list__value-favorites cards-list__value-favorites--panorama" disabled type="number"
-              value="215">
-          </button>
+            <input class="cards-list__value-favorites cards-list__value-favorites--panorama" disabled type="number" value="215">
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)" type="image/webp"
-                srcset="./img/catalog-img/photo-1-desktop.webp 1x, ./img/catalog-img/photo-1-desktop@2x.webp 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp"
-                srcset="./img/catalog-img/photo-1-tablet.webp 1x, ./img/catalog-img/photo-1-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="./img/catalog-img/photo-1-mobile.webp 1x, ./img/catalog-img/photo-1-mobile@2x.webp 2x">
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-1-desktop.jpg 1x, ./img/catalog-img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-1-tablet.jpg 1x, ./img/catalog-img/photo-1-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-1-mobile.jpg"
-                alt="камера снимающая белую иномарку." srcset="./img/catalog-img/photo-1-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" type="image/webp" srcset="./img/catalog-img/photo-1-desktop.webp 1x, ./img/catalog-img/photo-1-desktop@2x.webp 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp" srcset="./img/catalog-img/photo-1-tablet.webp 1x, ./img/catalog-img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog-img/photo-1-mobile.webp 1x, ./img/catalog-img/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-1-desktop.jpg 1x, ./img/catalog-img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-1-tablet.jpg 1x, ./img/catalog-img/photo-1-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-1-mobile.jpg" alt="камера снимающая белую иномарку." srcset="./img/catalog-img/photo-1-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Левон
@@ -116,17 +102,14 @@
           <p class="cards-list__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="356">
-          </button>
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-2-desktop.jpg 1x, ./img/catalog-img/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-2-tablet.jpg 1x, ./img/catalog-img/photo-2-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-2-mobile.jpg" alt="барабаны."
-                srcset="./img/catalog-img/photo-2-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-2-desktop.jpg 1x, ./img/catalog-img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-2-tablet.jpg 1x, ./img/catalog-img/photo-2-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-2-mobile.jpg" alt="барабаны." srcset="./img/catalog-img/photo-2-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Антон
@@ -135,17 +118,14 @@
           <p class="cards-list__comment">Соседи будут рады!</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="666">
-          </button>
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-3-desktop.jpg 1x, ./img/catalog-img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-3-tablet.jpg 1x, ./img/catalog-img/photo-3-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-3-mobile.jpg" alt="стеклянный небоскрёб"
-                srcset="./img/catalog-img/photo-3-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-3-desktop.jpg 1x, ./img/catalog-img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-3-tablet.jpg 1x, ./img/catalog-img/photo-3-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-3-mobile.jpg" alt="стеклянный небоскрёб" srcset="./img/catalog-img/photo-3-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Борис
@@ -154,17 +134,14 @@
           <p class="cards-list__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="215">
-          </button>
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-4-desktop.jpg 1x, ./img/catalog-img/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-4-tablet.jpg 1x, ./img/catalog-img/photo-4-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-4-mobile.jpg" alt="кубанская бахча"
-                srcset="./img/catalog-img/photo-4-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-4-desktop.jpg 1x, ./img/catalog-img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-4-tablet.jpg 1x, ./img/catalog-img/photo-4-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-4-mobile.jpg" alt="кубанская бахча" srcset="./img/catalog-img/photo-4-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Сергей
@@ -173,17 +150,14 @@
           <p class="cards-list__comment">Самая кубанская в мире!</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="4">
-          </button>
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-5-desktop.jpg 1x, ./img/catalog-img/photo-5-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-5-tablet.jpg 1x, ./img/catalog-img/photo-5-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-5-mobile.jpg" alt="фото с вершины горы"
-                srcset="./img/catalog-img/photo-5-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-5-desktop.jpg 1x, ./img/catalog-img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-5-tablet.jpg 1x, ./img/catalog-img/photo-5-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-5-mobile.jpg" alt="фото с вершины горы" srcset="./img/catalog-img/photo-5-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Максим
@@ -192,17 +166,14 @@
           <p class="cards-list__comment">Где снег-то?</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="150">
-          </button>
+            </button>
         </li>
         <li class="cards-list__item">
           <a class="cards-list__link" href="#" target="_blank">
             <picture>
-              <source media="(min-width: 1080px)"
-                srcset="./img/catalog-img/photo-6-desktop.jpg 1x, ./img/catalog-img/photo-6-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px) and (max-width: 1079px)"
-                srcset="./img/catalog-img/photo-6-tablet.jpg 1x, ./img/catalog-img/photo-6-tablet@2x.jpg 2x">
-              <img class="cards-list__image" src="./img/catalog-img/photo-6-mobile.jpg" alt="крыло самолета на закате"
-                srcset="./img/catalog-img/photo-6-mobile@2x.jpg 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-6-desktop.jpg 1x, ./img/catalog-img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-6-tablet.jpg 1x, ./img/catalog-img/photo-6-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-6-mobile.jpg" alt="крыло самолета на закате" srcset="./img/catalog-img/photo-6-mobile@2x.jpg 2x">
             </picture>
           </a>
           <h3 class="cards-list__title">Надежда
@@ -211,7 +182,7 @@
           <p class="cards-list__comment">Всем GM и взаимные лайки!</p>
           <button class="cards-list__favorites" disabled type="button">Нравится:
             <input class="cards-list__value-favorites" disabled type="number" value="2560">
-          </button>
+            </button>
         </li>
       </ul>
     </section>
@@ -222,11 +193,8 @@
       <form class="photo-editor__form" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data">
         <picture>
-          <source media="(min-width: 660px)"
-            srcset="./img/catalog-img/photo-editor-tablet.jpg 1x, ./img/catalog-img/photo-editor-tablet@2x.jpg 2x">
-          <img class="photo-editor__image" src="./img/catalog-img/photo-editor-mobile.jpg"
-            alt="зимний пейзаж - дорога проходящая через лес на рассвете"
-            srcset="./img/catalog-img/photo-editor-mobile@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="./img/catalog-img/photo-editor-tablet.jpg 1x, ./img/catalog-img/photo-editor-tablet@2x.jpg 2x">
+          <img class="photo-editor__image" src="./img/catalog-img/photo-editor-mobile.jpg" alt="зимний пейзаж - дорога проходящая через лес на рассвете" srcset="./img/catalog-img/photo-editor-mobile@2x.jpg 2x">
         </picture>
         <ul class="photo-editor__list">
           <li class="photo-editor__item">
@@ -234,8 +202,9 @@
               <svg class="photo-editor__button-icon photo-editor__button-icon--crop" width="44" height="44">
                 <use href="img/sprite.svg#photo-editor-crop"></use>
               </svg>
-              <span class="visually-hidden">Сделать кроп фотографии.</span>
-            </button>
+              <span
+                class="visually-hidden">Сделать кроп фотографии.</span>
+              </button>
             <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--crop" type="button" style="left: 160px;"></button>
             </div>
@@ -249,7 +218,7 @@
                 Сделать
                 заливку фотографии.
               </span>
-            </button>
+              </button>
             <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--fill" type="button" style="left: 25px;"></button>
             </div>
@@ -262,7 +231,7 @@
               <span class="visually-hidden">Поменять
                 контрастность фотографии.
               </span>
-            </button>
+              </button>
             <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--contrast" type="button" style="left: 96px;"></button>
             </div>
@@ -274,10 +243,8 @@
           </div>
         </div>
         <div class="photo-editor__wrapper-button-form">
-          <button class="photo-editor__button-form photo-editor__button-form--first button button--second"
-            type="submit">Запостить</button>
-          <button class="photo-editor__button-form photo-editor__button-form--last button button--third"
-            type="reset">Отмена</button>
+          <button class="photo-editor__button-form photo-editor__button-form--first button button--second" type="submit">Запостить</button>
+          <button class="photo-editor__button-form photo-editor__button-form--last button button--third" type="reset">Отмена</button>
         </div>
       </form>
     </section>
